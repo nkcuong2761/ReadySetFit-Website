@@ -1,0 +1,110 @@
+[
+  {
+    "imgUrl": "https://i.ibb.co/GdPhq1f/faull.jpg",
+    "name": "Katherine Faull",
+    "description": "Professor of German and Humanities",
+    "position": "current-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/xmMjyxM/barnhart.jpg",
+    "name": "Shaunna Barnhart",
+    "description": "Ph.D. Director of Place Studies",
+    "position": "current-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/vqmqPZ9/stu.jpg",
+    "name": "Stu Thompson",
+    "description": "Associate Professor of Electrical and Computer Engineering",
+    "position": "current-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/gJdLwV3/cuong.webp",
+    "name": "Cuong Nguyen '23",
+    "description": "Computer Science",
+    "position": "current-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/N6BH5TG/anna.png",
+    "name": "Anna Ottman '26",
+    "description": "Electrical and Computer Engineering",
+    "position": "current-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/mBwCbNc/josie.webp",
+    "name": "Josie Lippincott '22",
+    "description": "Digital Communications, Media & Design",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/bJHKzbc/nicholas.png",
+    "name": "Nicholas Passantino '21",
+    "description": "Computer Science and Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/S6yBnj1/austin.webp",
+    "name": "Austin O'Neil '19",
+    "description": "History",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/Mk277gX/zach.jpg",
+    "name": "Zach Dunbrack '21",
+    "description": "Computer Science",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/K6yz18v/caroline.png",
+    "name": "Caroline Whitman '18",
+    "description": "Computer Science",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/cXWtXDw/jacob.png",
+    "name": "Jacob Mendelowitz '18",
+    "description": "Computer Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/1Mxb5x0/sam.webp",
+    "name": "Sam Greenberg '18",
+    "description": "Computer Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/WPjGN4Q/henry.png",
+    "name": "Henry Stann '17",
+    "description": "Biomedical Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://media.licdn.com/dms/image/C5603AQEbAs6RnYuy3g/profile-displayphoto-shrink_800_800/0/1517823266321?e=1686182400&v=beta&t=EhGr5uyzS_pGwmZ68UpDcaoZSSXZNFVYTyua6oGciTM",
+    "name": "Christian Ouellette '18",
+    "description": "Computer Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    "name": "Chase Kravetz '20",
+    "description": "Economics",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    "name": "Jiayu Huang '17",
+    "description": "Computer Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    "name": "Rajastri Alaparti '17",
+    "description": "Chemical Engineering",
+    "position": "past-team"
+  },
+  {
+    "imgUrl": "https://media.licdn.com/dms/image/C4E03AQHTaY4lz_RPXA/profile-displayphoto-shrink_800_800/0/1517225090513?e=1686182400&v=beta&t=03yzddD15GkMevR-dKW5IUtX67dEjAQ2YPG_9WXDNxM",
+    "name": "Will Sumfest '17",
+    "description": "UC Berkeley, Computer Science",
+    "position": "past-team"
+  }
+]

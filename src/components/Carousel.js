@@ -4,6 +4,10 @@ import { rsfTheme } from "./theme";
 import PathCard from './PathCard';
 import {ReactComponent as ArrowRightIcon} from "../assets/arrow-right.svg";
 import {ReactComponent as ArrowLeftIcon} from "../assets/arrow-left.svg";
+import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
+import { Pagination, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const pathsData = [
   {
@@ -39,64 +43,57 @@ const pathsData = [
 ]
 
 const pathsList = pathsData.map((path) => 
-  <PathCard imgUrl={path.url} name={path.name} region={path.region}/>
+  <SwiperSlide key={path.name}>
+    <PathCard imgUrl={path.url} name={path.name} region={path.region}/>
+  </SwiperSlide>
 );
+const SwiperButtonPrev = () => {
+  const swiper = useSwiper();
+  return (
+    <Button variant='outlined' sx={{minWidth:48}} size='small'
+    onClick={() => {
+      swiper.slidePrev()
+      }}>
+      <ArrowLeftIcon/>
+    </Button>
+  )
+};
+const SwiperButtonNext = () => {
+  const swiper = useSwiper();
+  return (
+    <Button variant='outlined' sx={{minWidth:48}} size='small'
+    onClick={() => swiper.slideNext()}>
+      <ArrowRightIcon/>
+    </Button>
+  )
+};
 
-class Carousel extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeIndex: 0,
-      translateValue: 0,
-    };
+function Carousel() {
+  const swiper = useSwiper();
 
-    this.handlePrevClick = this.handlePrevClick.bind(this);
-    this.handleNextClick = this.handleNextClick.bind(this);
-  }
-
-  handlePrevClick() {
-    const { activeIndex, translateValue } = this.state;
-    const lastIndex = pathsData.length - 1;
-    const shouldResetIndex = activeIndex === 0;
-    const index = shouldResetIndex ? lastIndex : activeIndex - 1;
-    const nextTranslateValue = shouldResetIndex ? -(lastIndex * 100) : translateValue + 100;
-
-    this.setState({
-      activeIndex: index,
-      translateValue: nextTranslateValue
-    });
-
-    setTimeout(() => {
-      this.setState({ transition: false });
-    }, 500);
-  }
-
-  handleNextClick() {
-    const { activeIndex, translateValue } = this.state;
-    const lastIndex = pathsData.length - 1;
-    const shouldResetIndex = activeIndex === lastIndex;
-    const index = shouldResetIndex ? 0 : activeIndex + 1;
-    const nextTranslateValue = shouldResetIndex ? 0 : translateValue - 100;
-
-    this.setState({
-      activeIndex: index,
-      translateValue: nextTranslateValue
-    });
-
-    setTimeout(() => {
-      this.setState({ transition: false });
-    }, 500);
-  }
-
-  render() {
-    const { activeIndex, translateValue } = this.state;
-
-    return (
-    <ThemeProvider theme={rsfTheme}>
-      <Stack
-        direction='column'
-        paddingY={12}
-        alignItems='stretch'>
+  return (
+  <ThemeProvider theme={rsfTheme}>
+    <Stack
+      direction='column'
+      alignContent='start'
+      spacing={4}
+      paddingTop={16}>
+      {/* Carousel */}
+      <Swiper
+        modules={[Pagination, A11y]}
+        spaceBetween={36}
+        slidesPerView={3}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        style={{
+          width: '100%', 
+          height: 560, 
+          paddingTop: 64,
+          display: 'flex',
+          flexDirection: 'column-reverse',
+          alignItems: 'stretch',
+          gap: 48}}>
+        
         <Stack
           direction='row'
           justifyContent='space-between'
@@ -111,32 +108,20 @@ class Carousel extends React.Component {
             justifyContent='flex-end'
             alignItems='stretch'
             height={48}>
-            <Button variant='outlined' sx={{minWidth:48}} size='small'
-              onClick={this.handlePrevClick}>
-              <ArrowLeftIcon/>
-            </Button>
-            <Button variant='contained' sx={{minWidth:48}} size='small'
-              onClick={this.handleNextClick}>
-              <ArrowRightIcon/>
-            </Button>
+            <SwiperButtonPrev/>
+            <SwiperButtonNext/>
           </Stack>
         </Stack>
 
-        {/* Carousel */}
-        <Stack
-          direction='row'
-          spacing={3}
-          paddingY={4}
-          sx={{
-          flexWrap: 'nowrap',
-          overflowX: 'hidden',
-          transform: `translateX(${translateValue}%)`,
-          transition: 'transform ease-out 0.45s'}}>
-          { pathsList }
-        </Stack>
-      </Stack>
-    </ThemeProvider>
-  )}
+        { pathsList }
+      </Swiper>
+
+      <Button variant="contained" startIcon={<ArrowRightIcon/>} sx={{width: 180}}>
+        Learn More
+      </Button>
+    </Stack>
+  </ThemeProvider>
+  )
 }
 
 export default Carousel;

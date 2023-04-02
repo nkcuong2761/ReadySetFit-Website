@@ -59,6 +59,13 @@ export const rsfTheme = createTheme({
     },
     button: {
       fontWeight: 600
+    },
+    caption: {
+      fontSize: 11
+    },
+    subtitle2: {
+      fontWeight: 600,
+      fontSize: 13
     }
   },
   components: {
@@ -79,7 +86,9 @@ export const rsfTheme = createTheme({
           }),
           ...(ownerState.size === 'small' && {
             padding: 0
-          })
+          }),
+          paddingTop: '8px',
+          paddingBottom: '8px',
         })
       },
     },
@@ -118,6 +127,13 @@ export const rsfTheme = createTheme({
           }
         }
       ]
-    }
+    },
+    MuiGrid2: {
+      defaultProps: {
+        // all grids under this theme will apply
+        // negative margin on the top and left sides.
+        disableEqualOverflow: false,
+      },
+    },
   }
 })

@@ -14,7 +14,7 @@ function PathCard({imgUrl, name, region}) {
         paddingX={2}
         paddingY={3}
         sx={{ minWidth: 300,
-          height: 432,
+          height: 450,
           background: `linear-gradient(180deg, rgba(41, 41, 41, 0) 40.72%, #292929 90.16%), url(${imgUrl})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

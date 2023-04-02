@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container, Stack, Typography, ThemeProvider, Button, Box, IconButton } from '@mui/material';
+import { Container, Stack, Typography, ThemeProvider, Button, Box} from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 import './App.css';
 import { rsfTheme } from "./components/theme";
 import NavBar from './components/NavBar';
 import heroImg from "./assets/hero.png";
+import contactImg from "./assets/illustration-addcontent.webp";
 import mockupsImg from "./assets/mockups.webp";
 import lookAtPhoneImg from "./assets/onthephone.webp";
 import {ReactComponent as AppleIcon} from "./assets/apple.svg";
@@ -12,6 +14,9 @@ import {ReactComponent as MilesIcon} from "./assets/miles.svg";
 import {ReactComponent as SceneryIcon} from "./assets/scenery.svg";
 import {ReactComponent as CoinsIcon} from "./assets/coins.svg";
 import Carousel from './components/Carousel';
+import Team from './assets/head-shots/team.json';
+import AvatarFrame from './components/AvatarFrame';
+import Footer from './components/Footer';
 
 function App() {
   const palette = {
@@ -20,6 +25,24 @@ function App() {
     yellow: rsfTheme.palette.warning.main,
     green: rsfTheme.palette.success.main
   }
+  const currentTeam = Team.map((member) => {
+    if (member.position === "current-team") {
+      return (
+        <Grid lg={3}>
+          <AvatarFrame key={member.name} imgUrl={member.imgUrl} name={member.name} description={member.description}/>
+        </Grid>
+      )
+    }
+  });
+  const pastTeam = Team.map((member) => {
+    if (member.position === "past-team") {
+      return (
+        <Grid lg={3}>
+          <AvatarFrame key={member.name} imgUrl={member.imgUrl} name={member.name} description={member.description}/>
+        </Grid>
+      )
+    }
+  });
   
   return (
   <ThemeProvider theme={rsfTheme}>
@@ -45,53 +68,56 @@ function App() {
         </Stack>
 
         {/* Hero Banner */}
-        <Stack height={300} paddingTop={5}
-        direction='row'>
-          <img src={heroImg}
-          alt='An illustration of a man running in the wild'
-          style={{flexGrow: 1, objectFit: 'contain', width:'100%'}}/>
-          <Stack variant='text-frame'
-          justifyContent='center'
-          flexGrow={1}
-          width='100%'>
-            <Typography variant='h2'>Get the App</Typography>
-            <Typography variant='body1'>Ready Set Fit is available on both App Store and Google Play. Download now and start walking!</Typography>
-            <Stack
-            direction='row'
-            alignItems="stretch"
-            spacing={1.5}
-            height={60}
-            paddingTop={1}>
-              <Button variant='contained' startIcon={<AppleIcon/>} disableElevation sx={{width: '180px'}}>
-                <Stack
-                direction='column'
-                alignItems="flex-start"
-                sx={{textTransform: 'none'}}>
-                  <Typography variant='body2'>Download on the</Typography>
-                  <Typography variant='h4'>App Store</Typography>
-                </Stack>
-              </Button>
-              <Box position='relative' padding={1}
-              width={164}
-              sx={{
-                background: 'linear-gradient(96.34deg, #03A9F4 0%, #02A0C0 45.62%, #FFC107 73.23%, #EF5350 100%)', 
-                borderRadius: '4px'}}>
-                <Button variant='contained' disableElevation
-                color='secondary'
-                startIcon={<GooglePlayIcon/>}
-                sx={{margin: '-5px', width: '174px', borderRadius: '2px'}}>
+        <Grid container height={400} paddingTop={5} spacing={3}>
+          <Grid lg={6}>
+            <img src={heroImg}
+            width='100%'
+            alt='An illustration of a man running in the wild'
+            style={{objectFit: 'contain'}}/>
+          </Grid>
+          <Grid lg={6} display='flex' alignItems='center'>
+            <Stack variant='text-frame'
+            justifyContent='center'
+            width='100%'>
+              <Typography variant='h2'>Get the App</Typography>
+              <Typography variant='body1'>Ready Set Fit is available on both App Store and Google Play. Download now and start walking!</Typography>
+              <Stack
+              direction='row'
+              alignItems="stretch"
+              spacing={1.5}
+              height={64}
+              paddingTop={1}>
+                <Button variant='contained' startIcon={<AppleIcon/>} disableElevation sx={{width: '180px'}}>
                   <Stack
                   direction='column'
                   alignItems="flex-start"
                   sx={{textTransform: 'none'}}>
-                    <Typography variant='body2'>Get it on</Typography>
-                    <Typography variant='h4'>Google Play</Typography>
+                    <Typography variant='body2'>Download on the</Typography>
+                    <Typography variant='h4'>App Store</Typography>
                   </Stack>
                 </Button>
-              </Box>
+                <Box position='relative' padding={1}
+                width={164}
+                sx={{
+                  background: 'linear-gradient(96.34deg, #03A9F4 0%, #02A0C0 45.62%, #FFC107 73.23%, #EF5350 100%)', 
+                  borderRadius: '4px'}}>
+                  <Button variant='contained' disableElevation
+                  color='secondary'
+                  startIcon={<GooglePlayIcon/>}
+                  sx={{margin: '-5px', width: '174px', borderRadius: '2px'}}>
+                    <Stack
+                    direction='column'
+                    alignItems="flex-start"
+                    sx={{textTransform: 'none'}}>
+                      <Typography variant='body2'>Get it on</Typography>
+                      <Typography variant='h4'>Google Play</Typography>
+                    </Stack>
+                  </Button>
+                </Box>
+              </Stack>
             </Stack>
-          </Stack>
-        </Stack>
+          </Grid>
+        </Grid>
 
       </Container>
 
@@ -99,12 +125,13 @@ function App() {
       <Container maxWidth="100vw"
       sx={{
       background: rsfTheme.palette.primary.light,
+      borderRadius: 10,
       marginTop: "-52px"}}>
         <Container sx={{paddingTop: "84px"}}>
           <Stack
           direction='row'
           alignItems='center'
-          spacing={4}>
+          spacing={5}>
             <img height={586} src={mockupsImg}
             style={{objectFit: 'contain', marginLeft:'-180px'}}
             alt='2 mockup screens of the Ready, Set, Fit Mobile App'/>
@@ -121,7 +148,7 @@ function App() {
       <Container>
         <Stack
           direction='row'
-          paddingY={12}
+          paddingTop={16}
           spacing={4}>
           <Stack variant='text-frame'
             justifyContent='center'
@@ -168,6 +195,65 @@ function App() {
         <Carousel/>
       </Container>
 
+      {/* Meet the Team */}
+      <Container maxWidth="100vw" sx={{
+        background: rsfTheme.palette.primary.light,
+        borderRadius: 10,
+        marginTop: 16,
+        paddingY: 12}}>
+        <Container>
+          <Stack direction='column' spacing={8}>
+            <Stack
+              direction='column'
+              spacing={4}>
+                <Typography variant='h2' sx={{alignSelf: 'stretch', textAlign: 'center'}}>
+                  Meet the Team
+                </Typography>
+                <Grid container spacing={5}>
+                  {currentTeam}
+                </Grid>
+            </Stack>
+            <Stack
+              direction='column'
+              spacing={4}>
+                <Typography variant='h2' sx={{alignSelf: 'stretch', textAlign: 'center'}}>
+                  Past Student Developers
+                </Typography>
+                <Grid container spacing={5}>
+                  {pastTeam}
+                </Grid>
+            </Stack>
+          </Stack>
+        </Container>
+      </Container>
+
+      <Container>
+        <Grid container spacing={3}
+        paddingTop={16} height={400}>
+          <Grid lg={6}>
+            <img src={contactImg}
+            alt='An illustration of two people looking up to a shining badge'
+            style={{flexGrow: 1, objectFit: 'contain', 
+            width:'100%'}}/>
+          </Grid>
+          <Grid lg={6} display='flex' alignItems='center'>
+            <Stack variant='text-frame'
+            justifyContent='center'
+            flexGrow={1}
+            width='100%'>
+              <Typography variant='h2'>Interested in Adding Content?</Typography>
+              <Typography variant='body1'>The development team is always looking for new content to add to our menu. If you and your organization are interested in developing new pathways, please contact us!</Typography>
+              <Button variant='contained' disableElevation 
+              sx={{width: '180px', marginTop: '8px'}}>
+                Contact Us
+              </Button>
+            </Stack>
+          </Grid>
+        </Grid>
+      </Container>
+      
+      {/* Footer */}
+      <Footer/>
     </Container>
   </ThemeProvider>
   );
