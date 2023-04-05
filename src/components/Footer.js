@@ -6,13 +6,18 @@ import rsfLogo from "../assets/rsf512.png";
 import {ReactComponent as AppleIcon} from "../assets/apple.svg";
 import {ReactComponent as GooglePlayIcon} from "../assets/google-play.svg";
 
-function Footer() {
+function Footer(borderRadius) {
+  const radius = borderRadius ? 48 : 0;
+
   return (
     <ThemeProvider theme={rsfTheme}>
     <Container maxWidth="100vw" sx={{
     background: rsfTheme.palette.primary.light,
     marginTop: 24,
-    paddingY: 12}}>
+    paddingY: 12,
+    borderTopLeftRadius: `${radius}px`,
+    borderTopRightRadius: `${radius}px`,
+    overflow: 'hidden'}}>
       <Container>
       <Grid container>
         <Grid lg={3}>

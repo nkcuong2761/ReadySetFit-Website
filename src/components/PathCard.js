@@ -30,7 +30,7 @@ function PathCard({imgUrl, name, region}) {
             <Typography variant="h3" color='secondary'>{name}</Typography>
           </Stack>
           <Button variant="contained" disableElevation color='secondary'
-            startIcon={<ArrowRightIcon/>} sx={{width: 180}}>
+            startIcon={<ArrowRightIcon/>} className="btn-main">
             Explore
           </Button>
       </Stack>

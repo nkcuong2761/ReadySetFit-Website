@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import { red } from "@mui/material/colors";
 import { palette } from "@mui/system";
 
 export const rsfTheme = createTheme({
@@ -55,6 +56,9 @@ export const rsfTheme = createTheme({
     },
     h6: {
       fontWeight: 600,
+      fontSize: 14
+    },
+    body2: {
       fontSize: 14
     },
     button: {
@@ -124,6 +128,13 @@ export const rsfTheme = createTheme({
           style: {
             flexDirection: 'column',
             gap: '12px'
+          }
+        },
+        {
+          props: {variant: 'hero-frame'},
+          style: {
+            flexDirection: 'row',
+            paddingTop: '64px'
           }
         }
       ]

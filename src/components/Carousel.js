@@ -1,5 +1,6 @@
 import { Button, Stack, ThemeProvider, Typography, Box } from "@mui/material";
 import React from "react";
+import { useEffect, useState } from "react";
 import { rsfTheme } from "./theme";
 import PathCard from './PathCard';
 import {ReactComponent as ArrowRightIcon} from "../assets/arrow-right.svg";
@@ -8,6 +9,7 @@ import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import { Pagination, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
 
 const pathsData = [
   {
@@ -42,7 +44,8 @@ const pathsData = [
   }
 ]
 
-const pathsList = pathsData.map((path) => 
+// let pathsData = getPathsDataFromAPI()
+const pathsList = pathsData.slice(0, 8).map((path) => 
   <SwiperSlide key={path.name}>
     <PathCard imgUrl={path.url} name={path.name} region={path.region}/>
   </SwiperSlide>
@@ -69,6 +72,29 @@ const SwiperButtonNext = () => {
 };
 
 function Carousel() {
+  const getPaths = async() => {// TODO: Problems with CORS on the Server side
+    try {
+      const response = await fetch("https://rsf.bucknell.edu/pathlist/?APIKey=RSFKey062318&version=1.0", {
+        method: 'GET',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': 'http://localhost:3000'
+        }
+      })
+      console.log(response)
+      const jsonData = await response.json();
+      console.log(jsonData)
+      return jsonData
+    } catch(error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    getPaths();
+  }, [])
+
   const swiper = useSwiper();
 
   return (
@@ -116,8 +142,11 @@ function Carousel() {
         { pathsList }
       </Swiper>
 
-      <Button variant="contained" startIcon={<ArrowRightIcon/>} sx={{width: 180}}>
-        Learn More
+      <Button variant="contained" startIcon={<ArrowRightIcon/>}  
+        className="btn-main">
+        <Link to="/trails" className="link-navbar">
+          Learn More
+        </Link>
       </Button>
     </Stack>
   </ThemeProvider>

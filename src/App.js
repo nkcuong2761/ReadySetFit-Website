@@ -46,12 +46,12 @@ function App() {
   
   return (
   <ThemeProvider theme={rsfTheme}>
-    <Container maxWidth='100vw' sx={{paddingLeft: '0px'}} padding={0}>
+    <Container maxWidth='100vw' padding={0}>
       <Container>
         <NavBar/>
 
         {/* Hero Text */}
-        <Stack direction='row' justifyContent='center' paddingTop={8}>
+        <Stack justifyContent='center' variant="hero-frame">
           <Stack 
           direction='column'
           spacing={2}
@@ -125,7 +125,7 @@ function App() {
       <Container maxWidth="100vw"
       sx={{
       background: rsfTheme.palette.primary.light,
-      borderRadius: 10,
+      borderRadius: 12,
       marginTop: "-52px"}}>
         <Container sx={{paddingTop: "84px"}}>
           <Stack
@@ -198,7 +198,7 @@ function App() {
       {/* Meet the Team */}
       <Container maxWidth="100vw" sx={{
         background: rsfTheme.palette.primary.light,
-        borderRadius: 10,
+        borderRadius: 12,
         marginTop: 16,
         paddingY: 12}}>
         <Container>
@@ -243,8 +243,7 @@ function App() {
             width='100%'>
               <Typography variant='h2'>Interested in Adding Content?</Typography>
               <Typography variant='body1'>The development team is always looking for new content to add to our menu. If you and your organization are interested in developing new pathways, please contact us!</Typography>
-              <Button variant='contained' disableElevation 
-              sx={{width: '180px', marginTop: '8px'}}>
+              <Button variant='contained' disableElevation className="btn-main in-text-frame">
                 Contact Us
               </Button>
             </Stack>
@@ -253,7 +252,7 @@ function App() {
       </Container>
       
       {/* Footer */}
-      <Footer/>
+      <Footer borderRadius={true}/>
     </Container>
   </ThemeProvider>
   );
