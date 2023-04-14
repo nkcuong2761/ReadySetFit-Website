@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.link-navbar {
+.link-router {
   text-decoration: inherit;
   color: inherit;
 }

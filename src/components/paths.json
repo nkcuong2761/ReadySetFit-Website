@@ -1,0 +1,338 @@
+[{
+  "name": "Bucknell Admissions Tour",
+  "id": "buadmissions",
+  "length": 1.2096421087954377,
+  "startLat": 40.9551734,
+  "startLong": -76.8842232,
+  "difficulty": "Moderate",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://doc-14-88-mymaps.googleusercontent.com/untrusted/hostedimage/g2guslkp9ofsp9dc57hr0nmnb8/fpr4biormnpj3d5rv1jdgg759k/1664987779000/kanFeIA18aevL5A2WWvJyHE3rUUnQubA/09147225139192942088/5AKgB-9mmWED0CJ9hN8vAMfG25TCaFVBQEDry8HNS8EMYpDCs3kTtC_BtlN3KENAsWvU-ioMvVJ6ZyDYx7UtIVUZHtkmoRWR-6BoF6tWLjqaWcjZnwEXP1UbqmUg7Ux1api3ygHPCXadZYhTgsLIvkZIkSEpijfOYlkgP7YvQ-OH5T97V_qVF3PDKbofe3097?session=0&fife https://www.youtube.com/embed/-rcouB3AqF8",
+  "description": "This 1.16 mile walk introduces users to academic buildings and residential halls on Bucknell University's campus."
+}, {
+  "name": "Bucknell Athletic Facilities Tour",
+  "id": "buathletics",
+  "length": 1.555008046114732,
+  "startLat": 40.9558459,
+  "startLong": -76.8872327,
+  "difficulty": "Easy",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://lh3.googleusercontent.com/acoBsD6dlymbMjgkj-F8KdVya5Iqp81Pp-ac29LX2R6ZwmruMu_cMVnDf6FWvA4EyaKY8wJO7AicVcUQkeObSerYg0qlaKP2DGkHEbJVzeyTyFHN-dJJLwWIuIaSF3U43SvZMx8",
+  "description": ""
+}, {
+  "name": "Bucknell University Historical Tour",
+  "id": "buhistorical",
+  "length": 1.21,
+  "startLat": 40.9553192,
+  "startLong": -76.8820238,
+  "difficulty": "Easy",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://lh3.googleusercontent.com/YzPT4SU3GLlKpmmgMGNmAOSpH2AZxiX9p4275IuGMqfmUXGierx-TtBCtmuOFcCkV41ScGCnEZe82RNOVGCH0uevV-4WwXkPYVnzlrglUXoah8HDJ4NM0Vj94cVcJ3M5",
+  "description": ""
+}, {
+  "name": "Bucknell North Campus Arboretum Trail",
+  "id": "buarboretum",
+  "length": 0.72,
+  "startLat": 40.9575312,
+  "startLong": -76.8810367,
+  "difficulty": "Moderate",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://lh6.googleusercontent.com/VKGd2HU9W-pEOvYFr1GQY2yQnSX3b-nWvC4Vk-Kcb1x8WN47uMoTKtKeMkj0dDMLTaiz5ybWp8SZDZTipxkYuVEiQlNgc6tXhPwsT9RiXpSpLo3Qbksiele7yee9Sqk",
+  "description": ""
+}, {
+  "name": "Bucknell Statue and Sculpture Tour",
+  "id": "bustatues",
+  "length": 0.52,
+  "startLat": 40.9544847,
+  "startLong": -76.8830377,
+  "difficulty": "Moderate",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://lh3.googleusercontent.com/QJ1r2xFJAzWOewwXKyvtBVcw5T65kTXAUoojzn37S-h8fTM1S2ehebaQaXWs5Sj5Jcz_0gHw6k8cyTVBFF0GGMpJYMkML6LVD4ChpDgQdkPFUXuG6gwG51CUFk1XCKqx"
+}, {
+  "name": "Bucknell - Exploring Sustainability Through Landscapes",
+  "id": "busustainablelandscapes",
+  "length": 3.51,
+  "startLat": 40.9516871,
+  "startLong": -76.8825656,
+  "difficulty": "Difficult",
+  "region": "Bucknell Campus",
+  "imgUrl": "https://lh6.googleusercontent.com/u_xX_ILGX0GCobAFkWf1DZo4ft3y4pPZ2_blMpVb1UM7YfKYK01_vj7f8s_4LAzlc_Fu5AzPxhqeOTQsvmUnK-uMT-sLq6cZdbbBEPG3kG4tCuQ11-0sgIS8sv36TeM90-P3",
+  "description": ""
+}, {
+  "name": "Buffalo Valley Rail Trail (East-West)",
+  "id": "bvrailtrail1",
+  "length": 12.7,
+  "startLat": 40.9631385774998,
+  "startLong": -76.8874586373568,
+  "difficulty": "Easy",
+  "region": "Lewisburg, PA",
+  "imgUrl": "https://lh5.googleusercontent.com/NiDIEvet_3DSQhQln4F_-rAO478lvasYJcAXBnX7aduBXPWWLMpt45f97KjUqYVJOJsT2Hvnhrt-vTH9_56_c911JI4eATZkysR0y4PsQ6SbohphyHgeuztORN-TTtJIFLf9Dg",
+  "description": "This 12.7 mile trail will teach users about the history of transportation in Union County, and about the historic rail trail!"
+}, {
+  "name": "Dale's Ridge Trail",
+  "id": "dalesridge",
+  "length": 1.77,
+  "startLat": 40.9852079189844,
+  "startLong": -76.9319377094507,
+  "difficulty": "Difficult",
+  "region": "Lewisburg, PA",
+  "imgUrl": "https://lh4.googleusercontent.com/WPPwEwDvoAU5Xpp3gNStpekCjlcyrsqAptpI7ro7hbzP7bvQqPr-w3axWUTQnxK_GOGbme-1v2cU6natoRgt4AXPJ9sMyvZL0xdz3cGi49DqlyNIYmDj_MO5HIAKZXzxpeme9Ho",
+  "description": "This 1.77 mile hike introduces users to nature. Expect to gain knowledge on wildflowers and floodplains."
+}, {
+  "name": "North Danville Historical Walking Tour",
+  "id": "northdanville",
+  "length": 0.64,
+  "startLat": 40.9635733,
+  "startLong": -76.6108605,
+  "difficulty": "Easy",
+  "region": "Danville, PA",
+  "imgUrl": "https://lh4.googleusercontent.com/J8UzQMo8ZAvOcMGcTozyLoHAZ-cb33DKylr5vZCv6nXxuzYAMoj9jbFV8V5nWmLeRPuC-4svuTO3qWeC95KoIAK0t6ac29SdpzJScyzI69sSlr9xb-XaatrL32DYSHYXjA",
+  "description": ""
+}, {
+  "name": "South Danville Historical Walking Tour",
+  "id": "southdanville",
+  "length": 0.6,
+  "startLat": 40.9599213,
+  "startLong": -76.6176787,
+  "difficulty": "Easy",
+  "region": "Danville, PA",
+  "imgUrl": "https://lh3.googleusercontent.com/8ikcY_WujU2rZiIrfAU1-3dRsmXqRdrjPS8qI7M7tuHrU1TXvY_M4BLkCOBFs0WNouG-8V5nncXJl5OtkKcyX1-Cp0ZhIc95P6irB6x-utAbo47kwpDIVzTK2ZjDv3Su",
+  "description": ""
+}, {
+  "name": "Danville, PA - Historic Walking Tour",
+  "id": "danvillehistorical",
+  "length": 2.12,
+  "startLat": 40.9619269,
+  "startLong": -76.6178678,
+  "difficulty": "Easy",
+  "region": "Danville, PA",
+  "imgUrl": "",
+  "description": ""
+}, {
+  "name": "Geisinger Campus",
+  "id": "geisingercampus",
+  "length": 2.34,
+  "startLat": 40.967298,
+  "startLong": -76.607891,
+  "difficulty": "Easy",
+  "region": "Danville, PA",
+  "imgUrl": "",
+  "description": ""
+}, {
+  "name": "Lewisburg Downtown Architecture Tour",
+  "id": "lewisburgdowntownarchitecture",
+  "length": 0.8,
+  "startLat": 40.9632259,
+  "startLong": -76.8870637,
+  "difficulty": "Easy",
+  "region": "Lewisburg, PA",
+  "imgUrl": "https://lh5.googleusercontent.com/3qY2DXKpdSShtGoCWEjqxWm4XJy4u25heS0L4mBIPvcMzUnLyhnZy2CZifQ-ezkS3P7y_o3Uz2mGF0nfyZLLzMnzAjAhaXRzeizBcXkSEBJU7AcCklVg0vgJTY3bQ7o",
+  "description": ""
+}, {
+  "name": "Mexico City - Walking Tour 1",
+  "id": "mexico1",
+  "length": 2.84,
+  "startLat": 19.4270245,
+  "startLong": -99.1676647,
+  "difficulty": "Easy",
+  "region": "Mexico City, MX",
+  "imgUrl": "https://lh4.googleusercontent.com/rQ1pZEOTa_tLG7wFzVJxgyqX4pleX1X9syKL9IxIJbFPnXIGIdOKMzNaxytAWDGzkckrTI9AfskxveSbr6QvYSf5oWI7NwNjy1hJkEbcrdzLwAArWzxQ7bTkQS5PhgJks9mNTA",
+  "description": ""
+}, {
+  "name": "El recorrido a pie: Día 1",
+  "id": "mexico3",
+  "length": 2.84,
+  "startLat": 19.4277534,
+  "startLong": -99.1680727,
+  "difficulty": "Easy",
+  "region": "Mexico City, MX",
+  "imgUrl": "https://lh6.googleusercontent.com/VZNqPNuEhlMx43SbAUJeZZOew2Ia_LVusTz4SXe7t-GkTMHYFnWPf-dAK7-YinxcYH2YVO6atL30bc2wKq5tDK_YyhIh1SfxVbQT2FK3Ip_m3vXyIae8FxmTfGGzxFZhPKGuKQ",
+  "description": ""
+}, {
+  "name": "Mexico City - Walking Tour 2",
+  "id": "mexico2",
+  "length": 0.78,
+  "startLat": 19.4251196,
+  "startLong": -99.1716236,
+  "difficulty": "Easy",
+  "region": "Mexico City, MX",
+  "imgUrl": "https://lh4.googleusercontent.com/K1VuZSCUTwgA2qCB9TFphSuZYtmWleWGy0-JQuaxaUfKXpwaTf3bh5y1EEF-h8nr74FwVNKMRAnlCy5azFseEihT2weMTjGvqltWxodUCpPZrKWPKDJQ2UY7i0BGvlrSNYY9KQs",
+  "description": ""
+}, {
+  "name": "El recorrido a pie: Día 2",
+  "id": "mexico4",
+  "length": 0.78,
+  "startLat": 19.4251196,
+  "startLong": -99.1716236,
+  "difficulty": "Easy",
+  "region": "Mexico City, MX",
+  "imgUrl": "https://lh6.googleusercontent.com/rSm6R1CzdRpZHF3Xyl_POCyVirwDg6bMoAaTqzRnavlLDFNoYr8-lG-p-ftONgfjYMhkfmnCTUWQFB5cERK30_djR9pInQTTGLFr3_ltmplzjfuqfScRPA7eS7zW2QTKcZQt4g",
+  "description": ""
+}, {
+  "name": "Milton Historic Downtown Walking Tour",
+  "id": "miltonhistoricdowntown",
+  "length": 1.13,
+  "startLat": 41.0173735,
+  "startLong": -76.8544494,
+  "difficulty": "Easy",
+  "region": "Milton, PA",
+  "imgUrl": "https://lh3.googleusercontent.com/-iqQ_kijG22M3mHkecwgq6x0HubUrqUmbREfbMqDChfyh-Z2gGx1syxB5RSDnUyDhJRI3wPs9CX9HPWgch69sjWpifXRfh10UsgZ0uC0TEpYGy5msIlkdm562jcMup8v",
+  "description": ""
+}, {
+  "name": "Milton State Park",
+  "id": "miltonstatepark",
+  "length": 2.13,
+  "startLat": 41.016815,
+  "startLong": -76.862149,
+  "difficulty": "Moderate",
+  "region": "Milton, PA",
+  "imgUrl": "https://lh3.googleusercontent.com/O4h9b75rWvFs083tdFbdXYFq-KOPwGxWYMl4t5eu7uZxHbR4Ihqs3fL6Dtll3UU00I2KwyUzBT4ig4pjC0lAhST5ajDS1f0u0g55O4DcIVq7u5f-7y9CgL5x6bANR1Q867Lre1I https://lh5.googleusercontent.com/FYbj75TyIXGXahQlhamGb047CNfiQRSSfnxQVsj-WEnEumL1w2uAMaC8U1xCSVCXk6PKe0LVBfIboKs9RwrHw1WouXT5DihFC2X744JXxRjRDNgWwB9gNqo-sRqO9n9J1CqXEw"
+}, {
+  "name": "Northumberland, PA Historic Tour",
+  "id": "northumberlandhistoric",
+  "length": 1.36,
+  "startLat": 40.8905006,
+  "startLong": -76.7898813,
+  "difficulty": "Easy",
+  "region": "Northumberland, PA",
+  "imgUrl": "https://lh6.googleusercontent.com/VIkukRoA__N56WAxLFfAKYtWxBWuQMeShIZiMLS0_CBgf2KdnRBcyKmOgNuX2CiwT2ZlrZcXTHdHmpgS7GBCM6JjltflRtpMsiixOidXQlVolM6exwT2ZIbefgSmyCsCo3KI5g",
+  "description": ""
+}, {
+  "name": "Shikellamy State Park Marina",
+  "id": "shikellamymarina",
+  "length": 0.85,
+  "startLat": 40.8829007,
+  "startLong": -76.791628,
+  "difficulty": "Easy",
+  "region": "Northumberland, PA",
+  "imgUrl": "https://lh6.googleusercontent.com/FxfFTuTdW4fRKsfFPIPRRo5m4h7yhii8ORTt2d5OrT991hRzBOKaRjSpCDDCLcZjEVf9AB94txIF88sJP6rSTOXj1S-vJotuVNgCHlgxcLd9jonxyn2WiHhh3N99UMNo",
+  "description": ""
+}, {
+  "name": "Shamokin's Monuments",
+  "id": "shamokinmonuments",
+  "length": 1.772862834807772,
+  "startLat": 40.790715,
+  "startLong": -76.5588458,
+  "difficulty": "Moderate",
+  "region": "Shamokin, PA",
+  "imgUrl": "https://lh5.googleusercontent.com/gl5nEEqyYy5BwOazz4wXTGWC9JsU4HGgQf6-BzX1UfA2XNSDfYq9DBsQSz9vmFG_SXJcxmhL715kIT58KHCV7N9puDCmeziEF4nxu5szTzSbsriGy_IlKjhXivKsK2VP-lTRag",
+  "description": ""
+}, {
+  "name": "Shikellamy State Park Overlook",
+  "id": "shikellamyoverlook",
+  "length": 0.8,
+  "startLat": 40.8815886,
+  "startLong": -76.8013752,
+  "difficulty": "Moderate",
+  "region": "Northumberland, PA",
+  "imgUrl": "https://lh6.googleusercontent.com/proxy/4bQudrZNaLQiPtr8eqUqkieUEzBiOio7SVVTd1EFA-jz1ep3cFV1pZaULNsY9HhrldQc3NpWFW3NHl4qDvZicvz00Mqm0N6qkNL2VKPxX6WbIhVQz3nhtEch1bAACByVtHTYiw_7kIhhcAu0W2VZn5N-CnVNo7Dhn8h_TwToeIkob05wtdfNOFSu7-rhcYOoZQvMhTZdu9zav7BWyssB2G2eiNd5vcilK7e8wWHMRx4xauCDttcdEQ=s0-d",
+  "description": "In this 0.8 mile walk users will learn about the creation of Shikellamy State Park and the wildlife that lives there."
+}, {
+  "name": "Sunbury, PA Downtown",
+  "id": "sunburypadowntown2",
+  "length": 1.56,
+  "startLat": 40.8620001,
+  "startLong": -76.7948627,
+  "difficulty": "Easy",
+  "region": "Sunbury, PA",
+  "imgUrl": "https://lh6.googleusercontent.com/2A1r7c4kt8L2l-xjpwbnBlYPff_4z4Em_HC2i-LKpdUBW1LH_cNejDAb8ATjop-SdCcaPrD1KsQuo6V_C-25zBq-sFCw7P9zMHqg4Pk2FmJIgZ8Z2F7fUjEnCKzWgySlv8Wtu3w",
+  "description": ""
+}, {
+  "name": "Valley Forge National Park",
+  "id": "valleyforgenatpark",
+  "length": 4.91,
+  "startLat": 40.0983866,
+  "startLong": -75.4241253,
+  "difficulty": "Easy",
+  "region": "Montgomery County, PA",
+  "imgUrl": "https://lh4.googleusercontent.com/proxy/9sBtD5CL7FxLO57ll9dbycGAFuvGfLzHOpdazo9yyOhxv93Ig7zECmZ6irUfhUo9kQ269tIUk0FCPkHNXjZjs-5ecOvRKtenPYe17WM8iEtaKFaamf19NvGVSwyGaRnEpiy0nRkDbLEGCfoeS-Ded_Nkl5O2KzCMOuzN5CyhbrAQBQd10CBjf7pZmjML7Ea1piYID9AUWX8G7WOShPQFHQobuDufplcheOM7CECQsq2X8PA=s0-d https://lh4.googleusercontent.com/proxy/co0peTxr0F2SfN70LwexgnOZwVQq2oZwn3oD80VFxPitwyuJTwhixVNYE-1khvzkDKu7X4B3Zk1rWtUwhINgb2iNK8GypR35YE0vrOBoWE52-yw3l7B3VZXZBV9c2oTdwNavRxrJ7_slYAnWxEUxwuYYu-dDUnXdCcVZMfvlPHkUUiwJG15BQbh3a1oQEYw3RgK1GBe0Y9_GHcrp45On7qVUgJaJVQXPK4rHtracB0sr9pJ8=s0-d",
+  "description": "This 4.91 mile walk guides users around Valley Forge, an encampment during the American Revolutionary War."
+}, {
+  "name": "Historic Philadelphia",
+  "id": "historicphilly",
+  "length": 1.6,
+  "startLat": 39.9536354,
+  "startLong": -75.1498103,
+  "difficulty": "Easy",
+  "region": "Philadelphia, PA",
+  "imgUrl": "https://lh5.googleusercontent.com/proxy/wjZvb7UWcjlZtMv5q-nQVbKfEW4Y-HpTelzs0CiX1gkaWUdnBU5W6zdhtbFqryCmp8o65BSx8TOMIEvabO5jkMiK38I0iLkthpXDbvYq7GcGi8arG4UdVoYXLiD7M1kweP6tA7iyYmpOAfXf5dBPoGjTDDHdgkUUVJ8B1OGnByKLYLzdE5cjuj_lF3DhRytE2_u1lcyrq6ILGP5grnkAF64IMJJc03jHft2DbhUQ4_ShDIyj=s0-d",
+  "description": "Users on this 1.6 mile long walk will learn about the Liberty Bell, Independence Hall, and the Betsy Ross House."
+}, {
+  "name": "Harrisburg Capitol Grounds",
+  "id": "harrisburgcapitolgrounds",
+  "length": 0.26,
+  "startLat": 40.2651389,
+  "startLong": -76.8823712,
+  "difficulty": "Easy",
+  "region": "Harrisburg, PA",
+  "imgUrl": "https://whyy.org/wp-content/uploads/2020/10/50035197647_354383ac86_o-1920x1080.jpg",
+  "description": "In this 0.74 mile walk, users will tour Pennsylvania's State Capitol and learn about the offices housed there."
+}, {
+  "name": "Mount Carmel",
+  "id": "mtcarmelhistoricalpath",
+  "length": 1.6149124776793622,
+  "startLat": 40.7987762,
+  "startLong": -76.4149322,
+  "difficulty": "Moderate",
+  "region": "Mount Carmel, PA",
+  "imgUrl": "https://doc-14-88-mymaps.googleusercontent.com/untrusted/hostedimage/8idodhdt122m8kbu8d1mlacn48/15norsft41f8v75iu4o5cqjn44/1627942426500/kanFeIA18aevL5A2WWvJyHE3rUUnQubA/09147225139192942088/5AOlzF5aCKFNoh0xOslzuengo60a8xPRSj4Njyqg64Pz_lTycZ4zOWhTcqdvXegwjv11OxWpzyxhuzL61fE7VXBIsjUHGkAFAbIcRfHZ81_2tzOEJ9SBLFHdCtxMRVpYKq06bbFtU-ZyfpfvrkvN6yxNWFL8occX_aU4Y8e97WGHNWRt7qwuxPVxhAeFSLwgKAqp4ysDo?session=0&fife",
+  "description": ""
+}, {
+  "name": "Shamokin Edison path",
+  "id": "tedison_shamokinpa",
+  "length": 0.8685439451270024,
+  "startLat": 40.7919961,
+  "startLong": -76.5552171,
+  "difficulty": "Easy",
+  "region": "Shamokin, PA",
+  "imgUrl": "https://1.bp.blogspot.com/-W_fxlECgcBs/XbR8yJf1YMI/AAAAAAABi0A/J4_L6mOkqEQ4oND_yoDUULG_CypDUatigCLcBGAsYHQ/s1600/Thomas%2BEdison%2B1895_0.jpg",
+  "description": "This 0.87 mile walk introduces users to locations that Thomas Edison lived, worked, and invented."
+}, {
+  "name": "Mahanoy City",
+  "id": "mahanoycitypahistory",
+  "length": 1.1785489562731892,
+  "startLat": 40.810447,
+  "startLong": -76.1481073,
+  "difficulty": "Easy",
+  "region": "Mahanoy City, PA",
+  "imgUrl": "https://doc-00-4g-mymaps.googleusercontent.com/untrusted/hostedimage/fcs0hn59ivpaao5sqkug506hfc/imru488iove7j62mavcvgbqsf0/1573128000000/36xhBWZStvfXBEUjN0R-GcaDKPyj-UyM/16390216231623224982/1AF2TALq-VVd0dRZo0WbgE4ReHrk60T6AIS_a5kYP8oQZfBrpCi-cz8NMK048Kt6Furpmz7ZAkzMnITWnZS_T29CRY7WGA-PqzYjOMjZEYKBgh_1EvMteX8Q8OmaqAwMjI5DN5REux1bCNB4okEbuX0JilBjda90NXS_YVaJ1lqb3kbXINbgmsCFgpQKUTWukq0iSoDCKDU6otSGR01wrKCVgNtb9cAKpIk6tT-yxuLZ6c9jM_RnwQeH2hib_rpaMuL811KpVBYNcb9mUxCldbpfwvQAVNc1lhg?fife",
+  "description": ""
+}, {
+  "name": "Path to Pandaly - Lewisburg, PA",
+  "id": "PandalyLewisburgPA",
+  "length": 2.9368630854313014,
+  "startLat": 40.9646979,
+  "startLong": -76.8845974,
+  "difficulty": "Easy",
+  "region": "Lewisburg, PA",
+  "imgUrl": "https://doc-08-4g-mymaps.googleusercontent.com/untrusted/hostedimage/oa31pvopjkq6vdssrmbts4ds8s/9khakgt7of2b1kgj9cp9ph6blg/1614368349750/36xhBWZStvfXBEUjN0R-GcaDKPyj-UyM/16390216231623224982/5AF2TALrmDMF8MLlhlMiV09aJMp7YIJVXFszCHQHoUynDE-JQqNpp05kabzcZcfF5DCp6tt6S46L3sqOmnds-DHd7cgTvTojPEkqW4MymfeOxsBbJeg9G0szkOj80ywAigj2XHkggEpNtEfVjPw0WVcs3ueuCXTn1ed7tRsETANA4fEMSPyyIphy3PXJ4DUyKQHTkfMij4vJTRrd6HuJeuZd55xDu_Fr59w?session=0&fife"
+}, {
+  "name": "Shamokin, PA Art Mural Path",
+  "id": "ShamokinPAArtMurals",
+  "length": 2.1643617510306457,
+  "startLat": 40.7911734,
+  "startLong": -76.5568873,
+  "difficulty": "Easy",
+  "region": "Shamokin, PA",
+  "imgUrl": "https://doc-0g-68-mymaps.googleusercontent.com/untrusted/hostedimage/oa31pvopjkq6vdssrmbts4ds8s/lecanp9u98460fjtup3fnaikio/1616784494000/rt63KNDU615CRuGDdfkidInlaSNBYrDM/16390216231623224982/5AF2TALofA7AAjKCmV5z4HUWkDPzdcJdW2Sf7f6d1vraU1lLM_a-WpjBt9JUmN6wJi-vZdnmNUzCYXo8Bs4EfneOBP6jAGydc6KQj8ikqB8eZryRw1Sedo3KAIKNno3B2ud7oSWRLDHVsxrtKQ8qryEWYmVstNLQn4HfIxWQVsGs6kjhINAcE7Q0yYsGVOTGiPmw1hvR5D3RFAFaajDE4xznjvf0VIdXoeA?session=0&fife",
+  "description": "Users on this 2.16 mile walk will learn about Shamokin history and the collection of murals around the city."
+}, {
+  "name": "Keene Center Historic Walking Tour of Walnut Acres",
+  "id": "WalnutAcresFarm1",
+  "length": 1.1043824406206815,
+  "startLat": 40.8609516,
+  "startLong": -77.0422531,
+  "difficulty": "Easy",
+  "region": "Penn's Creek, PA",
+  "imgUrl": "https://doc-0k-20-mymaps.googleusercontent.com/untrusted/hostedimage/oa31pvopjkq6vdssrmbts4ds8s/m8tssjqs7dg48mncku1a24lis4/1627404301250/263_Qhby_p0UVbY9NsEt9UhV0wIKVhdz/16390216231623224982/5AOlzF5ZJoZzzyLak_6bdZEK73pFhLzl0PAdCFd7mIhAmpZlfa_VZSXkpGXAe2B80ZclTlU-EVTL_z8h0dTkgyDm42NVcKLrKTRezRnEEoMJzHzo1bR3JSRPOZmNuCFV2_ftDtxxF9ye9AKo31qrFO_RVYLr9AyK-vU08M-eDCEySca9qURDMPFAbWPUZS2WLSwtSX7U?session=0&fife",
+  "description": ""
+}, {
+  "name": "Shamokin's Historic 99 Steps",
+  "id": "893257",
+  "length": 0.6742221795720496,
+  "startLat": 40.790953,
+  "startLong": -76.55377,
+  "difficulty": "Easy",
+  "region": "Shamokin, PA",
+  "imgUrl": "https://doc-14-84-mymaps.googleusercontent.com/untrusted/hostedimage/8idodhdt122m8kbu8d1mlacn48/6f1pn8tg351pmbnmqg10ikkac8/1625664420250/yOts9TppzcXOA7ptJemYH7D4LjgQC10D/09147225139192942088/5AOlzF5bzzdB3_USpIurlPIhWDshEnF-2NUhYLEXlS3t9XBIFNkCeLP6p8Pxjv7mR2vww26TDRbDLnlm852mFYfRmr0RQRG92WoU2H16U5fhKRUAzsPaGvwPhP1koUh27AqmKEx-HoLImLo4SKqbsxkWbkKf_rOwnC9q2468GDUFMGFopLY840T-F05v1Mpbco8hWXKC5?session=0&fife",
+  "description": ""
+}]

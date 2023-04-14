@@ -48,8 +48,6 @@ function App() {
   <ThemeProvider theme={rsfTheme}>
     <Container maxWidth='100vw' padding={0}>
       <Container>
-        <NavBar/>
-
         {/* Hero Text */}
         <Stack justifyContent='center' variant="hero-frame">
           <Stack 
@@ -85,7 +83,7 @@ function App() {
               direction='row'
               alignItems="stretch"
               spacing={1.5}
-              height={64}
+              height={69}
               paddingTop={1}>
                 <Button variant='contained' startIcon={<AppleIcon/>} disableElevation sx={{width: '180px'}}>
                   <Stack
@@ -251,8 +249,6 @@ function App() {
         </Grid>
       </Container>
       
-      {/* Footer */}
-      <Footer borderRadius={true}/>
     </Container>
   </ThemeProvider>
   );

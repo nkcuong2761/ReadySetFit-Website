@@ -30,6 +30,9 @@ export const rsfTheme = createTheme({
     success: {
       main: "#389E0D",
       light: "#E2F1DC"
+    },
+    other: {
+      neutral5: "#61656A"
     }
   },
   typography: {
@@ -44,11 +47,13 @@ export const rsfTheme = createTheme({
     },
     h3: {
       fontWeight: 700,
-      fontSize: 22
+      fontSize: 22,
+      lineHeight: 1.5
     },
     h4: {
       fontWeight: 600,
-      fontSize: 18
+      fontSize: 18,
+      lineHeight: 1.5
     },
     h5: {
       fontWeight: 600,
@@ -65,7 +70,8 @@ export const rsfTheme = createTheme({
       fontWeight: 600
     },
     caption: {
-      fontSize: 11
+      fontSize: 11,
+      lineHeight: 1
     },
     subtitle2: {
       fontWeight: 600,
@@ -73,6 +79,17 @@ export const rsfTheme = createTheme({
     }
   },
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.variant === "h6" && {
+            ":hover" : {
+              color: "#004B8D"
+            }
+          })
+        })
+      }
+    },
     MuiButton: {
       defaultProps: {
         disableElevation: true,

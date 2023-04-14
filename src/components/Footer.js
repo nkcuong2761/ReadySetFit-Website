@@ -1,31 +1,34 @@
 import React from "react";
 import { rsfTheme } from "./theme";
-import { Button, Stack, ThemeProvider, Typography, Box, Container } from "@mui/material";
+import { Button, Stack, ThemeProvider, Typography, Box, Container, Link } from "@mui/material";
 import Grid from '@mui/material/Unstable_Grid2';
 import rsfLogo from "../assets/rsf512.png";
 import {ReactComponent as AppleIcon} from "../assets/apple.svg";
 import {ReactComponent as GooglePlayIcon} from "../assets/google-play.svg";
+import { Link as RouterLink } from "react-router-dom";
 
-function Footer(borderRadius) {
-  const radius = borderRadius ? 48 : 0;
+function Footer() {
 
   return (
+  <Container maxWidth='100vw' padding={0}>
     <ThemeProvider theme={rsfTheme}>
     <Container maxWidth="100vw" sx={{
     background: rsfTheme.palette.primary.light,
-    marginTop: 24,
+    marginTop: 20,
     paddingY: 12,
-    borderTopLeftRadius: `${radius}px`,
-    borderTopRightRadius: `${radius}px`,
+    borderTopLeftRadius: 48,
+    borderTopRightRadius: 48,
     overflow: 'hidden'}}>
       <Container>
       <Grid container>
         <Grid lg={3}>
           <Stack direction='column' spacing={2}>
-            <img height={128} width={128} src={rsfLogo} alt="RSF Logo" style={{mixBlendMode:'darken'}}/>
+            <RouterLink to="/" className="link-router">
+              <img height={128} width={128} src={rsfLogo} alt="RSF Logo" style={{mixBlendMode:'darken'}}/>
+            </RouterLink>
             <Stack direction='column' spacing={1}>
               <Button variant='contained' startIcon={<AppleIcon/>} disableElevation 
-              sx={{width: '158px', padding: '6px'}}>
+              sx={{width: '158px', paddingX: '6px', paddingY: '10px'}}>
                 <Stack
                 direction='column'
                 alignItems="flex-start"
@@ -42,7 +45,7 @@ function Footer(borderRadius) {
                 <Button variant='contained' disableElevation
                 color='secondary'
                 startIcon={<GooglePlayIcon/>}
-                sx={{margin: '-4px', width: '154px', borderRadius: '2px', padding: '4px'}}>
+                sx={{margin: '-4px', width: '154px', borderRadius: '2px', padding: '8px'}}>
                   <Stack
                   direction='column'
                   alignItems="flex-start"
@@ -56,33 +59,40 @@ function Footer(borderRadius) {
           </Stack>
         </Grid>
         <Grid lg={3} paddingTop={3}>
-          <Stack spacing={1}>
+          <Stack spacing={3}>
             <Typography variant="h5">LEARN</Typography>
-            <Typography variant="h6">About</Typography>
-            <Typography variant="h6">Trails</Typography>
-            <Typography variant="h6">Partnerships</Typography>
+            <Stack spacing={1}>
+              <Link variant="h6">About</Link>
+              <Link component={RouterLink} to="/trails" variant="h6">Trails</Link>
+              <Link variant="h6">Partnerships</Link>
+            </Stack>
           </Stack>
         </Grid>
         <Grid lg={3} paddingTop={3}>
-          <Stack spacing={1}>
+          <Stack spacing={3}>
             <Typography variant="h5">MORE ABOUT US</Typography>
-            <Typography variant="h6">Blog Posts</Typography>
-            <Typography variant="h6">Press</Typography>
-            <Typography variant="h6">Testimonials</Typography>
+            <Stack spacing={1}>
+              <Link variant="h6">Blog Posts</Link>
+              <Link variant="h6">Press</Link>
+              <Link variant="h6">Testimonials</Link>
+            </Stack>
           </Stack>
         </Grid>
         <Grid lg={3} paddingTop={3}>
-          <Stack spacing={1}>
+          <Stack spacing={3}>
             <Typography variant="h5">HELP</Typography>
-            <Typography variant="h6">Terms of Use</Typography>
-            <Typography variant="h6">Privacy Policy</Typography>
-            <Typography variant="h6">Contact Us</Typography>
+            <Stack spacing={1}>
+              <Link variant="h6">Terms of Use</Link>
+              <Link variant="h6">Privacy Policy</Link>
+              <Link variant="h6">Contact Us</Link>
+            </Stack>
           </Stack>
         </Grid>
       </Grid>
       </Container>
     </Container>
     </ThemeProvider>
+  </Container>
   )
 }
 

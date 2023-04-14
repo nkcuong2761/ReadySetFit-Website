@@ -1,10 +1,33 @@
-import { Button, Stack, ThemeProvider, Typography } from "@mui/material";
+import { Button, Skeleton, Stack, ThemeProvider, Typography } from "@mui/material";
 import React from "react";
+import { useState } from "react";
 import { rsfTheme } from "./theme";
 import {ReactComponent as ArrowRightIcon} from "../assets/arrow-right.svg";
 
 function PathCard({imgUrl, name, region}) {
+  const [isLoading, setIsLoading] = useState(true)
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  }
+  const handleImageError = () => {
+    // setIsLoading(false);
+  }
+
   return (
+    <>
+    {isLoading && (
+      <Skeleton variant="rectangular" height="100%" width="100%"
+      style={{borderRadius: '12px'}}/>
+    )}
+    <img 
+      style={{display:"none"}}
+      src={imgUrl}
+      onLoad={handleImageLoad}
+      onError={handleImageError}
+      alt=""
+    />
+    {!isLoading && (
     <ThemeProvider theme={rsfTheme}>
       <Stack
         direction='column'
@@ -35,7 +58,9 @@ function PathCard({imgUrl, name, region}) {
           </Button>
       </Stack>
     </ThemeProvider>
-  )
+    )}
+    </>
+  );
 }
 
 export default PathCard;
