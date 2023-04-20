@@ -100,7 +100,9 @@ function Trails() {
               {pathsList}
             </Grid>
             <Button variant='contained' startIcon={<ArrowRightIcon/>} disableElevation>
-              Trails Overview
+              <Link to="/trails/overview" className="link-router">
+                Trails Overview
+              </Link>
             </Button>
           </Stack>
         </Container>

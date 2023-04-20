@@ -27,18 +27,21 @@ function PathCardSimple({imgUrl, name, region, description}) {
         alignItems='stretch'
         spacing={1.5}
         >
-          {isLoading ? (
+          <>
+          {isLoading && (
             <Skeleton variant="rectangular" height={283} width="100%"
-            style={{borderRadius: '12px'}}>
-              <img src={imgUrl}
-              style={{display:"none"}}
-              onLoad={handleImageLoad}
-              onError={handleImageError}/>
-            </Skeleton>
-          ) : (
+            style={{borderRadius: '12px'}} />
+          )}
+          <img src={imgUrl}
+            style={{display:"none"}}
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+          />
+          {!isLoading && (
             <img src={imgUrl} height={283} alt=""
             style={{objectFit: 'cover', borderRadius: '12px'}}/>
           )}
+          </>
           <Stack direction='column'>
             <Typography variant="h4">{name}</Typography>
             <Typography variant="body2">{region}</Typography>

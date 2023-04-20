@@ -52,16 +52,19 @@ export const rsfTheme = createTheme({
     },
     h4: {
       fontWeight: 600,
-      fontSize: 18,
+      fontSize: 16,
       lineHeight: 1.5
     },
     h5: {
       fontWeight: 600,
-      fontSize: 16
+      fontSize: 14
     },
     h6: {
-      fontWeight: 600,
+      fontWeight: 500,
       fontSize: 14
+    },
+    body1: {
+      fontSize: 16
     },
     body2: {
       fontSize: 14

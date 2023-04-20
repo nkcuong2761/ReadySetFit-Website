@@ -29,6 +29,7 @@ function Footer() {
             <Stack direction='column' spacing={1}>
               <Button variant='contained' startIcon={<AppleIcon/>} disableElevation 
               sx={{width: '158px', paddingX: '6px', paddingY: '10px'}}>
+                <a href="https://apps.apple.com/us/app/ready-set-fit/id1261628010" target='_blank'>
                 <Stack
                 direction='column'
                 alignItems="flex-start"
@@ -36,6 +37,7 @@ function Footer() {
                   <Typography variant='caption'>Download on the</Typography>
                   <Typography variant='subtitle2'>App Store</Typography>
                 </Stack>
+                </a>
               </Button>
               <Box position='relative' padding='6px'
               width={146}
@@ -46,6 +48,7 @@ function Footer() {
                 color='secondary'
                 startIcon={<GooglePlayIcon/>}
                 sx={{margin: '-4px', width: '154px', borderRadius: '2px', padding: '8px'}}>
+                  <a href='https://play.google.com/store/apps/details?id=edu.bucknell.readysetfit&hl=en&gl=US&pli=1' target='_blank'>
                   <Stack
                   direction='column'
                   alignItems="flex-start"
@@ -53,6 +56,7 @@ function Footer() {
                     <Typography variant='caption'>Get it on</Typography>
                     <Typography variant='subtitle2'>Google Play</Typography>
                   </Stack>
+                  </a>
                 </Button>
               </Box>
             </Stack>

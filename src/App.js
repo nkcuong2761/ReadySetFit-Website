@@ -16,7 +16,6 @@ import {ReactComponent as CoinsIcon} from "./assets/coins.svg";
 import Carousel from './components/Carousel';
 import Team from './assets/head-shots/team.json';
 import AvatarFrame from './components/AvatarFrame';
-import Footer from './components/Footer';
 
 function App() {
   const palette = {
@@ -64,7 +63,6 @@ function App() {
             </Typography>
           </Stack>
         </Stack>
-
         {/* Hero Banner */}
         <Grid container height={400} paddingTop={5} spacing={3}>
           <Grid lg={6}>
@@ -85,7 +83,9 @@ function App() {
               spacing={1.5}
               height={69}
               paddingTop={1}>
+                
                 <Button variant='contained' startIcon={<AppleIcon/>} disableElevation sx={{width: '180px'}}>
+                <a href="https://apps.apple.com/us/app/ready-set-fit/id1261628010" target='_blank'>
                   <Stack
                   direction='column'
                   alignItems="flex-start"
@@ -93,6 +93,7 @@ function App() {
                     <Typography variant='body2'>Download on the</Typography>
                     <Typography variant='h4'>App Store</Typography>
                   </Stack>
+                </a>
                 </Button>
                 <Box position='relative' padding={1}
                 width={164}
@@ -102,7 +103,8 @@ function App() {
                   <Button variant='contained' disableElevation
                   color='secondary'
                   startIcon={<GooglePlayIcon/>}
-                  sx={{margin: '-5px', width: '174px', borderRadius: '2px'}}>
+                  sx={{margin: '-6px', width: '176px', borderRadius: '2px', paddingY: '10.5px'}}>
+                    <a href='https://play.google.com/store/apps/details?id=edu.bucknell.readysetfit&hl=en&gl=US&pli=1' target='_blank'>
                     <Stack
                     direction='column'
                     alignItems="flex-start"
@@ -110,6 +112,7 @@ function App() {
                       <Typography variant='body2'>Get it on</Typography>
                       <Typography variant='h4'>Google Play</Typography>
                     </Stack>
+                    </a>
                   </Button>
                 </Box>
               </Stack>
@@ -124,7 +127,8 @@ function App() {
       sx={{
       background: rsfTheme.palette.primary.light,
       borderRadius: 12,
-      marginTop: "-52px"}}>
+      marginTop: "-52px",
+      overflow:'hidden'}}>
         <Container sx={{paddingTop: "84px"}}>
           <Stack
           direction='row'
@@ -191,6 +195,7 @@ function App() {
 
         {/* Popular Trails */}
         <Carousel/>
+        
       </Container>
 
       {/* Meet the Team */}

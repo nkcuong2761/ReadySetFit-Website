@@ -15,3 +15,7 @@ body {
 .btn-main.in-text-frame, .btn.in-text-frame {
   margin-top: 8px;
 }
+a, a:hover {
+  text-decoration: inherit;
+  color: inherit;
+}

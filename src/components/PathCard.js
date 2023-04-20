@@ -12,6 +12,7 @@ function PathCard({imgUrl, name, region}) {
   }
   const handleImageError = () => {
     // setIsLoading(false);
+    console.log('cant load image')
   }
 
   return (
@@ -31,13 +32,13 @@ function PathCard({imgUrl, name, region}) {
     <ThemeProvider theme={rsfTheme}>
       <Stack
         direction='column'
-        spacing={3}
+        spacing={2}
         justifyContent='flex-end'
         alignItems='center'
         paddingX={2}
         paddingY={3}
         sx={{ minWidth: 300,
-          height: 450,
+          height: 440,
           background: `linear-gradient(180deg, rgba(41, 41, 41, 0) 40.72%, #292929 90.16%), url(${imgUrl})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
