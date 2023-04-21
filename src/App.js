@@ -3,7 +3,6 @@ import { Container, Stack, Typography, ThemeProvider, Button, Box} from '@mui/ma
 import Grid from '@mui/material/Unstable_Grid2';
 import './App.css';
 import { rsfTheme } from "./components/theme";
-import NavBar from './components/NavBar';
 import heroImg from "./assets/hero.png";
 import contactImg from "./assets/illustration-addcontent.webp";
 import mockupsImg from "./assets/mockups.webp";
@@ -18,6 +17,8 @@ import Team from './assets/head-shots/team.json';
 import AvatarFrame from './components/AvatarFrame';
 
 function App() {
+
+  // Here is where we import color palette from the theme
   const palette = {
     blue: rsfTheme.palette.info.main,
     red: rsfTheme.palette.error.main,
