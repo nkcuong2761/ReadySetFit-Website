@@ -7,11 +7,33 @@ import { kml as kmlToGeoJson } from "@tmcw/togeojson"
 import { useEffect, useState } from 'react'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
+const APIKey = "AIzaSyCNcEBwDmx3957AWqIYx1ibIIAwFl8P2Wc";
+
 function TrailOverviewFrame({path}) {
   const [geoJson, setGeoJson] = useState(null);
   const [map, setMap] = useState(null);
+  const [currentMap, setCurrentMap] = useState(null);
+  
+  // The `onLoad` function is a callback that is called by the `GoogleMap`
+  // component after the map has been initialized. The `map` parameter is
+  // provided by the `GoogleMap` component, not by the code that calls the
+  // `onLoad` function.
+  const onMapLoad = (map, geoJsonData) => {
+
+    setMap(map);
+
+    // Here we create a new `Data` object using the `google.maps.Data` class
+    // and pass in the `map` object. We then use the `addGeoJson` method to
+    // add the GeoJSON data to the map.
+    const dataLayer = new window.google.maps.Data({map});
+    dataLayer.addGeoJson(geoJsonData);
+  }
+  const onMapUnmount = () => {
+    setMap(null)
+  }
 
   useEffect(() => {
+    console.log('load xong map')
     fetch('http://rsf-dev.bucknell.edu/paths/' + path.id + '?isServer=true', {
       method: "GET",
       headers: {
@@ -32,34 +54,38 @@ function TrailOverviewFrame({path}) {
         reader.readAsText(blob);
       })
       .catch(error => console.log(error));
-  }, []);
+  }, [path]);
 
-  // The `onLoad` function is a callback that is called by the `GoogleMap`
-  // component after the map has been initialized. The `map` parameter is
-  // provided by the `GoogleMap` component, not by the code that calls the
-  // `onLoad` function.
-  const onMapLoad = (map, geoJsonData) => {
-
-    setMap(map);
-
-    // Here we create a new `Data` object using the `google.maps.Data` class
-    // and pass in the `map` object. We then use the `addGeoJson` method to
-    // add the GeoJSON data to the map.
-    const dataLayer = new window.google.maps.Data({map});
-    dataLayer.addGeoJson(geoJsonData);
-  }
-  const onMapUnmount = () => {
-    setMap(null)
-  }
+  useEffect(() => {
+    console.log('dcm')
+    if (geoJson) {
+      setCurrentMap(
+        <GoogleMap
+          key={path.id}
+          mapContainerStyle={{
+            height:'100%', 
+            width:'100%', 
+            borderRadius: '12px',
+            overflow:'hidden'}}
+          center={{lat: path.startLat, lng: path.startLong}}
+          zoom={15}
+          onLoad={(map) => onMapLoad(map, geoJson)}
+          onUnmount={onMapUnmount}
+        />
+      );
+    }
+  }, [geoJson])
 
   return (
     <ThemeProvider theme={rsfTheme}>
-      <Stack spacing={3}
+      <Stack spacing={1.5}
       direction='column'
       alignItems='stretch'
       height='100%'>
-        <Stack direction='row' alignItems='stretch'
-        height={140} justifyContent='space-between'>
+        <Stack direction='row' 
+        alignItems='stretch'
+        justifyContent='space-between'
+        height={160}>
           <Stack direction='column' justifyContent='space-between'>
             <Typography variant='h3'>{path.name}</Typography>
             <Stack direction='row' alignItems='center' spacing={0.25}>
@@ -90,32 +116,23 @@ function TrailOverviewFrame({path}) {
               </Stack>
             </Stack>
           </Stack>
-          <Stack direction='column' alignItems='flex-end' justifyContent='space-between'>
+          <Stack direction='column' 
+          alignItems='flex-end' 
+          justifyContent='space-between'>
             <Button variant='plain' startIcon={<Export/>}
             disableElevation className='btn in-text-frame'>
                 Share
             </Button>
             <Button variant='contained' startIcon={<ArrowRightIcon/>}
-            disableElevation className='btn in-text-frame'>
+            disableElevation className='btn in-text-frame' sx={{width:'160px'}}>
               Explore Trail
           </Button>
           </Stack>
         </Stack>
         
-        {/* Map */}
         {geoJson ? (
-          <LoadScript googleMapsApiKey='AIzaSyCNcEBwDmx3957AWqIYx1ibIIAwFl8P2Wc'>
-            <GoogleMap
-              mapContainerStyle={{
-                height:'100%', 
-                width:'100%', 
-                borderRadius: '12px',
-                overflow:'hidden'}}
-              center={{lat: 40.954771, lng:-76.883624}}
-              zoom={15}
-              onLoad={(map) => onMapLoad(map, geoJson)}
-              onUnmount={onMapUnmount}
-            />
+          <LoadScript googleMapsApiKey={APIKey}>
+            {currentMap}
           </LoadScript>
         ) : (
           <Skeleton variant="rectangular" height="600px"

@@ -25,6 +25,22 @@ const ScrollToTop = ({children}) => {
   return children
 } 
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/trails",
+    element: <Trails />
+  },
+  {
+    path: "/trails/overview",
+    element: <TrailsOverview />
+  },
+])
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>

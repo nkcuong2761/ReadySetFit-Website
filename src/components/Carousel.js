@@ -34,22 +34,24 @@ const SwiperButtonNext = () => {
 function Carousel() {
   // Web Storage API that stores rsf walkingPaths in the browser's local storage
   const cachedData = localStorage.getItem('walkingPaths')
-  if (!cachedData) {
-    // If the data is not cached, fetch it from the API
-    fetch("https://rsf-dev.bucknell.edu/pathlist/?APIKey=RSFKey062318&version=1.0",
-    {
-      method: "GET",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        // Store the data in local storage for future use
-        localStorage.setItem('walkingPaths', JSON.stringify(data))
+  useEffect(() => {
+    if (!cachedData) {
+      // If the data is not cached, fetch it from the API
+      fetch("https://rsf-dev.bucknell.edu/pathlist/?APIKey=RSFKey062318&version=1.0",
+      {
+        method: "GET",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        }
       })
-  }
+        .then(response => response.json())
+        .then(data => {
+          // Store the data in local storage for future use
+          localStorage.setItem('walkingPaths', JSON.stringify(data))
+        })
+    }
+  }, []);
   const pathsData = JSON.parse(localStorage.getItem('walkingPaths'))
   
   const pathsList = pathsData.slice(0, 8).map((path) => {

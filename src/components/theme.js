@@ -108,6 +108,12 @@ export const rsfTheme = createTheme({
               border: 'solid 2px',
             }
           }),
+          ...(ownerState.variant === "plain" && {
+            backgroundColor: '#F6F6F6',
+            ":hover" : {
+              backgroundColor: '#ECECEC',
+            }
+          }),
           ...(ownerState.size === 'small' && {
             padding: 0
           }),
