@@ -16,6 +16,7 @@ import TrailsOverview from './Pages/TrailsOverview';
 import ErrorPage from './Pages/ErrorPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import TrailDetails from './Pages/TrailDetails';
 
 const ScrollToTop = ({children}) => {
   const location = useLocation();
@@ -24,22 +25,6 @@ const ScrollToTop = ({children}) => {
   }, [location.pathname]);
   return children
 } 
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/trails",
-    element: <Trails />
-  },
-  {
-    path: "/trails/overview",
-    element: <TrailsOverview />
-  },
-])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -51,6 +36,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path='/trails' element={<Trails/>} />
           <Route path='/trails/overview' element={<TrailsOverview/>} />
+          <Route path='/trails/overview/detail' element={<TrailDetails/>} />
         </Routes>
         <Footer/>
       </ScrollToTop>

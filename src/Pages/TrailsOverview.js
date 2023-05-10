@@ -1,4 +1,4 @@
-import { Container, Stack, Typography, ThemeProvider, ListItem, Divider, ListItemAvatar, ListItemText, List, Skeleton} from '@mui/material';
+import { Container, Stack, Typography, ThemeProvider, List} from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import { rsfTheme } from "../components/theme";
 import BreadcrumbsNew from '../components/BreadcrumbsNew'
@@ -60,7 +60,7 @@ function TrailsOverview() {
       <Stack
       direction='column'
       alignItems='start'
-      spacing={3}>
+      spacing={4}>
         <BreadcrumbsNew
         pastLinks={breadcrumbsLinks}
         currentLink="Trails Overview"/>

@@ -6,6 +6,7 @@ import {ReactComponent as ArrowRightIcon} from "../assets/arrow-right.svg";
 import { kml as kmlToGeoJson } from "@tmcw/togeojson"
 import { useEffect, useState } from 'react'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { Link as RouterLink } from "react-router-dom";
 
 const APIKey = "AIzaSyCNcEBwDmx3957AWqIYx1ibIIAwFl8P2Wc";
 
@@ -33,7 +34,7 @@ function TrailOverviewFrame({path}) {
   }
 
   useEffect(() => {
-    console.log('load xong map')
+    console.log('Map finish loading')
     fetch('http://rsf-dev.bucknell.edu/paths/' + path.id + '?isServer=true', {
       method: "GET",
       headers: {
@@ -111,7 +112,7 @@ function TrailOverviewFrame({path}) {
                 <Typography variant='h4'>? miles away</Typography>
                 <Typography variant='body2' 
                 color={rsfTheme.palette.other.neutral5}>
-                  Start
+                  Distance
                 </Typography>
               </Stack>
             </Stack>
@@ -123,10 +124,13 @@ function TrailOverviewFrame({path}) {
             disableElevation className='btn in-text-frame'>
                 Share
             </Button>
-            <Button variant='contained' startIcon={<ArrowRightIcon/>}
-            disableElevation className='btn in-text-frame' sx={{width:'160px'}}>
-              Explore Trail
-          </Button>
+            <RouterLink to="/trails/overview/detail" 
+            state={{from: path}}>
+              <Button variant='contained' startIcon={<ArrowRightIcon/>}
+              disableElevation className='btn in-text-frame' sx={{width:'160px'}}>
+                Explore Trail
+              </Button>
+            </RouterLink>
           </Stack>
         </Stack>
         
